@@ -1,16 +1,12 @@
-package petarkitanovic.androidkurs.galerija.ui.gallery;
+package petarkitanovic.androidkurs.galerija.ui.jelovnik;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -21,13 +17,13 @@ import petarkitanovic.androidkurs.galerija.meni.Company;
 import petarkitanovic.androidkurs.galerija.meni.Product;
 import petarkitanovic.androidkurs.galerija.meni.ProductAdapter;
 
-public class GalleryFragment extends Fragment {
+public class JelovnikFragment extends Fragment {
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        View root = inflater.inflate(R.layout.fragment_gallery, container, false);
+        View root = inflater.inflate(R.layout.fragment_jelovnik, container, false);
 
         RecyclerView recyclerView = root.findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));

@@ -13,15 +13,15 @@
 
     <fragment
         android:id="@+id/nav_meni"
-        android:name="petarkitanovic.androidkurs.galerija.ui.gallery.GalleryFragment"
+        android:name="petarkitanovic.androidkurs.galerija.ui.jelovnik.JelovnikFragment"
         android:label="@string/menu_meni"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_jelovnik" />
 
     <fragment
         android:id="@+id/nav_kuhinja"
-        android:name="petarkitanovic.androidkurs.galerija.ui.slideshow.SlideshowFragment"
+        android:name="petarkitanovic.androidkurs.galerija.ui.karta_pica.KartaPicaFragment"
         android:label="@string/menu_kuhinja"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_karta_pica" />
 
     <fragment
         android:id="@+id/nav_enterijer"
