@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="petarkitanovic.androidkurs.galerija.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_meni"
+        android:name="petarkitanovic.androidkurs.galerija.ui.gallery.GalleryFragment"
+        android:label="@string/menu_meni"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_kuhinja"
+        android:name="petarkitanovic.androidkurs.galerija.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_kuhinja"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_enterijer"
+        android:name="petarkitanovic.androidkurs.galerija.ui.enterijer.EnterijerFragment"
+        android:label="@string/menu_enterijer"
+        tools:layout="@layout/fragment_enterijer" />
+
+    <fragment
+        android:id="@+id/nav_dostava"
+        android:name="petarkitanovic.androidkurs.galerija.ui.dostava.DostavaFragment"
+        android:label="@string/menu_dostava"
+        tools:layout="@layout/fragment_dostava" />
+
+    <fragment
+        android:id="@+id/nav_o_nama"
+        android:name="petarkitanovic.androidkurs.galerija.ui.o_nama.ONamaFragment"
+        android:label="@string/menu_o_nama"
+        tools:layout="@layout/fragment_o_nama" />
+</navigation>
