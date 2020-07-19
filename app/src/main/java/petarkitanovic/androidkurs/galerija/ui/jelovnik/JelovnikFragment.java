@@ -10,8 +10,12 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.thoughtbot.expandablerecyclerview.listeners.GroupExpandCollapseListener;
+import com.thoughtbot.expandablerecyclerview.models.ExpandableGroup;
+
 import java.util.ArrayList;
 
+import petarkitanovic.androidkurs.galerija.LinearLayoutManagerWithSmoothScroller;
 import petarkitanovic.androidkurs.galerija.R;
 import petarkitanovic.androidkurs.galerija.meni.Company;
 import petarkitanovic.androidkurs.galerija.meni.Product;
@@ -25,8 +29,8 @@ public class JelovnikFragment extends Fragment {
 
         View root = inflater.inflate(R.layout.fragment_jelovnik, container, false);
 
-        RecyclerView recyclerView = root.findViewById(R.id.recyclerView);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        final RecyclerView recyclerView = root.findViewById(R.id.recyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManagerWithSmoothScroller(getContext()));
 
         ArrayList<Company> companies = new ArrayList<>();
 
@@ -192,7 +196,21 @@ public class JelovnikFragment extends Fragment {
         companies.add(dezert);
 
 
-        ProductAdapter adapter = new ProductAdapter(companies);
+        final ProductAdapter adapter = new ProductAdapter(companies);
+
+        adapter.setOnGroupExpandCollapseListener(new GroupExpandCollapseListener() {
+            @Override
+            public void onGroupExpanded(ExpandableGroup group) {
+                recyclerView.smoothScrollToPosition(adapter.getGroupPositionWhenExpand(group));
+            }
+
+            @Override
+            public void onGroupCollapsed(ExpandableGroup group) {
+                recyclerView.smoothScrollToPosition(adapter.getGroupPositionWhenCollapse(group));
+            }
+        });
+
+
         recyclerView.setAdapter(adapter);
         return root;
     }

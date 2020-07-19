@@ -6,6 +6,7 @@ import android.view.ViewGroup;
 
 import com.thoughtbot.expandablerecyclerview.ExpandableRecyclerViewAdapter;
 import com.thoughtbot.expandablerecyclerview.models.ExpandableGroup;
+import com.thoughtbot.expandablerecyclerview.models.ExpandableListPosition;
 
 import java.util.List;
 
@@ -39,5 +40,19 @@ public class ProductAdapter extends ExpandableRecyclerViewAdapter<CompanyViewHol
     public void onBindGroupViewHolder(CompanyViewHolder holder, int flatPosition, ExpandableGroup group) {
         final Company company = (Company) group;
         holder.bind(company);
+    }
+
+    public int getGroupPositionWhenExpand(ExpandableGroup group) {
+        return expandableList.getFlattenedGroupIndex(group);
+    }
+
+    public int getGroupPositionWhenCollapse(ExpandableGroup group) {
+        ExpandableListPosition listPosition = expandableList.getUnflattenedPosition(expandableList.getFlattenedGroupIndex(group));
+        int previousGroupPosition = listPosition.groupPos;
+        if (previousGroupPosition <= 0) {
+            previousGroupPosition = 0;
+        }
+
+        return expandableList.getFlattenedGroupIndex(previousGroupPosition);
     }
 }
