@@ -16,8 +16,7 @@ public class ONamaFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_o_nama, container, false);
-        final TextView textView = root.findViewById(R.id.text_o_nama);
-        textView.setText("O NAMA");
+
         return root;
     }
 }

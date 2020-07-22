@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,18 +7,49 @@
     android:background="@color/colorPrimary"
     tools:context=".ui.o_nama.ONamaFragment">
 
-    <TextView
-        android:id="@+id/text_o_nama"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textColor="@android:color/white"
-        android:textSize="20sp"
+        android:paddingBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/text_o_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="serif"
+            android:text="O NAMA"
+            android:textAlignment="center"
+            android:textColor="@android:color/tertiary_text_light"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/about_us"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="serif"
+            android:text="Donec enim diam vulputate ut pharetra sit amet aliquam id. Sed pulvinar proin gravida hendrerit lectus. Felis bibendum ut tristique et egestas quis ipsum suspendisse. \n \nEu tincidunt tortor aliquam nulla facilisi cras. Leo urna molestie at elementum eu facilisis sed. Bibendum ut tristique et egestas quis ipsum suspendisse ultrices. Pellentesque massa placerat duis ultricies lacus sed. Ultrices sagittis orci a scelerisque. Nec ultrices dui sapien eget mi proin sed libero. Blandit aliquam etiam erat velit scelerisque in dictum. Sodales ut etiam sit amet nisl purus in. Massa sed elementum tempus egestas sed sed risus. Tempus egestas sed sed risus pretium. Pellentesque habitant morbi tristique senectus et netus et malesuada. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper. Non diam phasellus vestibulum lorem sed risus ultricies tristique."
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_o_nama" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

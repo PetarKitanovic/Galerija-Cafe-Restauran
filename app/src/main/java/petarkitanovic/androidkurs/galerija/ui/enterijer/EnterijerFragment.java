@@ -18,9 +18,6 @@ public class EnterijerFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View root = inflater.inflate(R.layout.fragment_enterijer, container, false);
-        TextView textView = root.findViewById(R.id.text_enterijer);
-
-        textView.setText("Enterijer");
 
         return root;
     }
