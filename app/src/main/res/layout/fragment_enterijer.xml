@@ -48,20 +48,36 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_o_nama" />
 
-        <ImageView
-            android:id="@+id/viewPager"
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager2"
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:layout_marginStart="20sp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="24dp"
             android:layout_marginEnd="20dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="20dp"
             android:scaleType="centerInside"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/about_us"
-            app:srcCompat="@drawable/gal2" />
+            app:layout_constraintTop_toBottomOf="@+id/about_us">
+
+        </androidx.viewpager.widget.ViewPager>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.Material.Light.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="20dp"
+            android:progressBackgroundTint="#00BF0D0D"
+            android:progressTint="#C88A8A8A"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/about_us" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
