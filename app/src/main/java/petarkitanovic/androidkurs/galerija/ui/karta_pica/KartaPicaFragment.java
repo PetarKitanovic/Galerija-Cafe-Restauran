@@ -51,7 +51,7 @@ public class KartaPicaFragment extends Fragment {
         bezalkoholnaPica.add(new Product("Caj od nane", "", "320"));
         bezalkoholnaPica.add(new Product("Kuvano vino", "", "450"));
 
-        Company bezAlkoholnaPica = new Company("Bezalkoholna Pica", bezalkoholnaPica);
+        Company bezAlkoholnaPica = new Company("Bezalkoholna Pića", bezalkoholnaPica);
         companies.add(bezAlkoholnaPica);
 
         ArrayList<Product> gaziraniSokovi = new ArrayList<>();
@@ -97,7 +97,7 @@ public class KartaPicaFragment extends Fragment {
         zestokaPica.add(new Product("Caj od nane", "", "320"));
         zestokaPica.add(new Product("Kuvano vino", "", "450"));
 
-        Company zestina = new Company("Zestoka pica", zestokaPica);
+        Company zestina = new Company("Žestoka pića", zestokaPica);
         companies.add(zestina);
 
 

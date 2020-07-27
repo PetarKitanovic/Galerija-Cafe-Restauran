@@ -47,7 +47,7 @@ public class JelovnikFragment extends Fragment {
         dorucakMeni.add(new Product("Jaja u tortilji", "jaja, salata, majonez", "320"));
         dorucakMeni.add(new Product("Engleski dorucak", "3 jaja, kobasica", "450"));
 
-        Company dorucak = new Company("Dorucak", dorucakMeni);
+        Company dorucak = new Company("Doručak", dorucakMeni);
         companies.add(dorucak);
 
         ArrayList<Product> sendviciMeni = new ArrayList<>();
@@ -60,7 +60,7 @@ public class JelovnikFragment extends Fragment {
         sendviciMeni.add(new Product("Milanese", "kecap, sunka, sir, sampinjoni, pavlaka, suvi vrat", "450"));
         sendviciMeni.add(new Product("Madjarica", "kecap, sunka, sir, sampinjoni, pavlaka, suvi vrat", "500"));
 
-        Company sendvic = new Company("Sendvici", sendviciMeni);
+        Company sendvic = new Company("Sendviči", sendviciMeni);
         companies.add(sendvic);
 
         ArrayList<Product> corbaMeni = new ArrayList<>();
@@ -69,7 +69,7 @@ public class JelovnikFragment extends Fragment {
         corbaMeni.add(new Product("Milanese", "kecap, sunka, sir, sampinjoni, pavlaka, suvi vrat", "200"));
         corbaMeni.add(new Product("Madjarica", "kecap, sunka, sir, sampinjoni, pavlaka, suvi vrat", "200"));
 
-        Company corba = new Company("Corbe", corbaMeni);
+        Company corba = new Company("Čorbe", corbaMeni);
         companies.add(corba);
 
         ArrayList<Product> pastaMeni = new ArrayList<>();
@@ -143,7 +143,7 @@ public class JelovnikFragment extends Fragment {
         meksickaMeni.add(new Product("Madjarica", "kecap, sunka, sir, sampinjoni, pavlaka, suvi vrat", "500"));
         meksickaMeni.add(new Product("Madjarica", "kecap, sunka, sir, sampinjoni, pavlaka, suvi vrat", "500"));
 
-        Company meksickaHrana = new Company("Meksicka hrana", meksickaMeni);
+        Company meksickaHrana = new Company("Meksička hrana", meksickaMeni);
         companies.add(meksickaHrana);
 
 
@@ -175,7 +175,7 @@ public class JelovnikFragment extends Fragment {
         slanePalacinkeMeni.add(new Product("Margarita", "kecap, sir, maslina", "230"));
         slanePalacinkeMeni.add(new Product("Capricciosa", "kecap, sir, sunka, sampinjoni", "250"));
 
-        Company slanePalacinke = new Company("Slane palacinke", slanePalacinkeMeni);
+        Company slanePalacinke = new Company("Slane palačinke", slanePalacinkeMeni);
         companies.add(slanePalacinke);
 
 

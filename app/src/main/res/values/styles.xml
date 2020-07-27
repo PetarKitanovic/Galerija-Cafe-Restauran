@@ -18,4 +18,11 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+
+    <style name="NavigationViewText" >
+        <item name="fontFamily">@font/amatic_sc_bold</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+
 </resources>
